@@ -16,20 +16,15 @@
     lda #PPUMASK_ON | PPUMASK_NO_CLIP
     sta PPUMASK
     lda #PPUCTRL_NMI_ON | PPUCTRL_8X16_SPR
-    sta PPUMASK
+    sta PPUCTRL
 
     jmp nmi_return
 .endproc
 
 .proc main
-    lda #0
-    bit PPUSTATUS
-    sta PPUCTRL
-    sta PPUMASK
-
     jsr ppu_set_palette
-
     jsr prepare_game_sprites
+    store16into #main_nmi, nmi_ptr
     lda #PPUCTRL_NMI_ON
     sta PPUCTRL
 loop:
