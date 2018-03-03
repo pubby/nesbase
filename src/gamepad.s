@@ -1,7 +1,5 @@
 .include "globals.inc"
 
-.export read_gamepads
-
 .segment "CODE"
 ; Sets button flags of 'buttons_held' and 'buttons_pressed'.
 ; Clobbers A, X, Y.

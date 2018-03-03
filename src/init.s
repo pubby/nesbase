@@ -1,10 +1,5 @@
 .include "globals.inc"
 
-.import main
-.import wait_for_nmi
-.import nmi_return
-.export reset_handler
-
 .segment "CODE"
 ; Init code.
 ; (See http://wiki.nesdev.com/w/index.php/Init_code )

@@ -29,8 +29,40 @@
 
 .global tv_type
 
-; tables
+; TABLES ;;;;;;;;;;;;;;;;;;;;;;;;;
 .global asl4_table
 .global powers_of_2_table
+
+; ROUTINES ;;;;;;;;;;;;;;;;;;;;;;;
+
+; init.s
+.global reset_handler
+
+; gamepad.s
+.global read_gamepads
+
+; palette.s
+.global ppu_set_palette
+.global prep_palette
+.global ppu_copy_palette_buffer
+
+
+; nmi.s
+.global nmi_handler
+.global irq_handler
+.global nmi_return
+.global wait_for_nmi
+
+; sprites.s
+.global prepare_blank_sprites
+.global prepare_game_sprites
+.global clear_remaining_sprites
+
+; main.s
+.global main
+
+; rng.s
+.global random_byte
+
 
 .endif

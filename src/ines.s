@@ -1,4 +1,4 @@
-.import nmi_handler, reset_handler, irq_handler
+.include "globals.inc"
 
 .segment "INESHDR"
     .byt "NES",$1A  ; magic signature

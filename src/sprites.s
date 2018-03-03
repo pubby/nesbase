@@ -1,9 +1,5 @@
 .include "globals.inc"
 
-.export prepare_blank_sprites
-.export prepare_game_sprites
-.export clear_remaining_sprites
-
 .segment "CODE"
 
 .proc prepare_blank_sprites

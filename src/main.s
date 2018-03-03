@@ -1,14 +1,5 @@
 .include "globals.inc"
 
-.import reset_handler
-.import read_gamepads
-.import ppu_set_palette
-.import nmi_return
-.import wait_for_nmi
-.import prepare_game_sprites
-
-.export main 
-
 .segment "CODE"
 
 .proc main_nmi

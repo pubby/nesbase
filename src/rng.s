@@ -1,7 +1,5 @@
 .include "globals.inc"
 
-.export random_byte
-
 .segment "CODE"
 
 ; Taken from http://wiki.nesdev.com/w/index.php/Random_number_generator

@@ -1,10 +1,5 @@
 .include "globals.inc"
 
-.export nmi_handler
-.export nmi_return
-.export irq_handler
-.export wait_for_nmi
-
 .segment "CODE"
 .align 16
 nmi_handler:

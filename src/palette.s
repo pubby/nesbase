@@ -1,9 +1,5 @@
 .include "globals.inc"
 
-.export ppu_set_palette
-.export prep_palette
-.export ppu_copy_palette_buffer
-
 .segment "RODATA"
 palette:
     .byt $0F,$11,$23,$35
