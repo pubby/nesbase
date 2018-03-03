@@ -4,11 +4,6 @@
 .include "nes.inc"
 .include "macros.inc"
 
-OAM_Y = $0200
-OAM_P = $0201
-OAM_A = $0202
-OAM_X = $0203
-
 .globalzp debug
 .globalzp nmi_counter
 .globalzp nmi_x
