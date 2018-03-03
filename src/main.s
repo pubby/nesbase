@@ -12,10 +12,12 @@
 .segment "CODE"
 
 .proc main_nmi
-    bit PPUSTATUS
+    lda #.hibyte(OAM)
+    sta OAMDMA
     lda #PPUMASK_ON | PPUMASK_NO_CLIP
     sta PPUMASK
     lda #PPUCTRL_NMI_ON | PPUCTRL_8X16_SPR
+    bit PPUSTATUS
     sta PPUCTRL
 
     jmp nmi_return
