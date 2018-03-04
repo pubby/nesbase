@@ -11,7 +11,7 @@
 #
 
 # These are used in the title of the NES program
-title := platformer
+title := game
 version := 0.01
 
 # Space-separated list of assembly language files that make up the
